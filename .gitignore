@@ -1,0 +1,37 @@
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle/wrapper/gradle-wrapper.jar
+
+# Android
+local.properties
+*.apk
+*.aar
+*.ap_
+*.aab
+*.so
+*.jks
+*.keystore
+*.zip
+*.tar.gz
+*.rar
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+*.swp
+*.swo
+*~
+.classpath
+.project
+.settings/
+.vscode/
+
+# Build
+*.class
+*.jar
+*.log
