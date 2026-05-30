@@ -19,8 +19,10 @@ jobs:
           java-version: '17'
           cache: 'gradle'
 
-      - name: Make gradlew executable
-        run: chmod +x ./gradlew
+      - name: Make gradlew executable and fix line endings
+        run: |
+          sed -i -e 's/\r$//' gradlew
+          chmod +x gradlew
 
       - name: Build with Gradle
         run: ./gradlew assembleDebug --no-daemon --stacktrace
